@@ -1,0 +1,2308 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_ValIn"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="unshift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="unshift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="zero" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_zero"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getVectOfTaggedValues" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Sreg"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_DiagIn"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_edgeOut"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Sreg"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="unshift" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift_right" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift_right" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_EdgeIn"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shift_right" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_edgeOut"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="clear" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="shiftDiagInEdgeOut" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shiftDiagInEdgeOut" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shiftDiagInEdgeOut" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_DiagIn"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shiftDiagInEdgeOut" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_edgeOut"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="CalcMod" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="CalcMod" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="hlsReg" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hlsReg" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="BoolArr" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="And" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="And" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="Or" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="Or" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="Reset" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="Reset" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Val"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="streamsAreEmpty" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="streamsAreEmpty" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="runTs" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="wideFloatToBits" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="p_Val"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="wideFloatToBits" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="p_Val"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="wideFloatToBits" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="wideFloatToBits" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="wideBitsToFloat" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_Val"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="wideBitsToFloat" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_Val"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="wideBitsToFloat" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="wideBitsToFloat" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="shuffle_input" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="wordFromMem"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shuffle_input" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+<option name="enable_flush" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shuffle_input" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="WR_buffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="localBuffer"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WR_buffer" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+<option name="enable_flush" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="split" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="WR_bufferWithReuse" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="localBuffer"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="WR_bufferWithReuse" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+<option name="enable_flush" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="merge" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="mergeWithReuse" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="shuffle_output" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="wordFromWR"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shuffle_output" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+<option name="enable_flush" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="shuffle_output" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="load_matrix" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="store_matrix" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="store_matrixGVA" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="fromMemStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="fromMemStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="wrStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="wrStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="wrStream1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="wrStream1"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="wrStream2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="wrStream2"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="shuffleStream1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="shuffleStream1"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="shuffleStream2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="shuffleStream2"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="shuffleStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="shuffleStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="toMemStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_matrix_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="toMemStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="fromMemStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="fromMemStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="wrStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="wrStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="shuffleStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="shuffleStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="toMemStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="transp_GemvA_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="toMemStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="runTransp" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadB" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_B"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_C"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_B"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_C"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_B"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_C"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_valA"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_C"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aWrStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aWrStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aWrStream1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aWrStream1"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aWrStream2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aWrStream2"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aShuffleStream1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aShuffleStream1"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aShuffleStream2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aShuffleStream2"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aShuffleStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aShuffleStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="aTranspStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemv_blocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="aTranspStream"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="runGemv" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="floatTypeToMacBits" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macBitsToFloatType" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="macStep" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmDelayAB" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmDelayAB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmSplitDL" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmSplitDL" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmSplitDL" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmMergeDdrS" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmMergeDdrS" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="l_cwin"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_cout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_arow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_brow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf00" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="l_cwin"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_cout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_arow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_brow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf01" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="l_cwin"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_cout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_arow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_brow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf10" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="l_cwin"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_cout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_arow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_brow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcHalf11" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmReadABX" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmReadABX" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmReadABX" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmSplitB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmMergeB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmBufferB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmBufferB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmTagAB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmTagAB" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_taggedValA"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmTagAB" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_taggedValB"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cwin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowin"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cowinSave"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="l_cwin"/>
+<option name="array" positionalBoolean="class" value=""/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_a"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_b"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_cout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_arow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_brow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalc" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_taggedAs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_taggedBs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_taggedAs"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_taggedBs"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="l_taggedAs"/>
+<option name="core" value="FIFO_LUTRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="l_taggedBs"/>
+<option name="core" value="FIFO_LUTRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfAs00"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfAs01"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfAs10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfAs11"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfBs00"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfBs01"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfBs10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_halfBs11"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfAs00"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfAs01"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfAs10"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfAs11"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfBs00"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfBs01"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfBs10"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_halfBs11"/>
+<option name="DEPTH" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_dataS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_dataS"/>
+<option name="DEPTH" value="t_DdrWidth/2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCalcComp" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_bufferC"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="l_bufferC"/>
+<option name="core" value="RAM_T2P_BRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_bufferCReg"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmCBuffer" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_bufferX"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_wideWordX"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_xVal"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_cWord"/>
+<option name="complete" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmAddX" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmWrite" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Bs0_0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Bs0_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Bs1_0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Bs1_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Bs1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As1_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As1_2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As2_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As2_2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_As3"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_AEdgeS0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_BEdgeS0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_CEdgeS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_COutS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Bs0_0"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Bs0_1"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Bs1_0"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Bs1_1"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Bs1"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As1"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As1_1"/>
+<option name="depth" value="t_aColMemWords*t_aMH"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As1_2"/>
+<option name="depth" value="t_aColMemWords*t_aMH"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As2_1"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As2_2"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As2"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_As3"/>
+<option name="depth" value="4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_AEdgeS0"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_BEdgeS0"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_CEdgeS"/>
+<option name="depth" value="t_DdrWidth*2*t_bColMemWords"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlockStream" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_COutS"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_As"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_Bs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_As"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_Bs"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmReadAndMult" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_Xs"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_As"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_Bs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_Xs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_Cs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_As"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_Xs"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_Bs"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmBlocks" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_Cs"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="GemmWriteDdrStream" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loadD" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="32"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadD" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loadD" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_Desc"/>
+<option name="CYCLIC" positionalBoolean="type" value=""/>
+<option name="factor" value="t_numDescPerDdr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadB" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="3624"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadB" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="604"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="loadC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="604"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="storeC" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="loaderA" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loaderA" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loaderA" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="loaderAnoDdr" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loaderAnoDdr" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="loaderAnoDdr" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_val"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColSplit" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_activity"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarColMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="colUnit" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="colUnit" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_activity"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_preActive"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowSplit" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="xBarRowMerge" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="p_Sout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="36870"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowInterleave" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="abVal"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="gVal"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="cVal"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="3072"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="rowUnit" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="aggUnit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_activity"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="aggUnit" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="cVal"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="aggUnit" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="1"/>
+<option name="max" value="604"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="aggUnit" label="">
+<pragma name="PIPELINE">
+<option name="II" value="12"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="aggUnit" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoCXinp"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoCXinp"/>
+<option name="depth" value="t_FifoDepthShallow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoCXsplit"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoCXsplit"/>
+<option name="depth" value="t_FifoDepthDeep"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoCUinp"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoCUinp"/>
+<option name="depth" value="t_FifoDepthShallow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoRXinp"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoRXinp"/>
+<option name="depth" value="t_FifoDepthShallow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoRXsplit"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoRXsplit"/>
+<option name="depth" value="t_FifoDepthDeep"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoRXmerged"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoRXmerged"/>
+<option name="depth" value="t_FifoDepthDeep"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoRIout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoRIout"/>
+<option name="depth" value="t_FifoDepthDeep"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_fifoRUout"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_fifoRUout"/>
+<option name="depth" value="t_FifoDepthShallow"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlCXsplitDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlCXsplitDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlCUpre"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlCUpre"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlCUpost"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlCUpost"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlRXsplitDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlRXsplitDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlRXmergeDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlRXmergeDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlRiDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlRiDone"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="l_controlRUpost"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_controlRUpost"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_B"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_C"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="m_C"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoCXsplit"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoCXsplit"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoRIout"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoRIout"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoRUout"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoRUout"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_fifoCUinp"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_controlCUpre"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_controlCUpost"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_controlRUpost"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="l_controlRiDone"/>
+<option name="COMPLETE" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="multA" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="runSpmv" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="kernelOpLow" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="16"/>
+<option name="latency" value="125"/>
+<option name="port" positionalBoolean="4" value="p_DdrRd"/>
+<option name="offset" value="slave"/>
+<option name="bundle" value="gmemm"/>
+<option name="num_read_outstanding" value="16"/>
+<option name="num_write_outstanding" value="16"/>
+<option name="max_read_burst_length" value="16"/>
+<option name="max_write_burst_length" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="16"/>
+<option name="latency" value="125"/>
+<option name="port" positionalBoolean="4" value="p_DdrWr"/>
+<option name="offset" value="slave"/>
+<option name="bundle" value="gmemm"/>
+<option name="num_read_outstanding" value="16"/>
+<option name="num_write_outstanding" value="16"/>
+<option name="max_read_burst_length" value="16"/>
+<option name="max_write_burst_length" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="p_DdrRd"/>
+<option name="bundle" value="control"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="p_DdrWr"/>
+<option name="bundle" value="control"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="control"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_DdrRd"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="p_DdrWr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="l_timeStream"/>
+<option name="depth" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="gemxKernel_0" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

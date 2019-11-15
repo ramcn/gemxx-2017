@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/src/gemx_kernel.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:01:09 ; elapsed = 00:00:45 . Memory (MB): peak = 454.207 ; gain = 17.500 ; free physical = 117182 ; free virtual = 157359" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:01:11 ; elapsed = 00:00:47 . Memory (MB): peak = 454.207 ; gain = 17.500 ; free physical = 117174 ; free virtual = 157359" tag=""/>
+	<Message prefix="[HLS 200-150]" severity="INFO" keynum="11" content="Vivado HLS completed successfully" tag=""/>
+</Messages>

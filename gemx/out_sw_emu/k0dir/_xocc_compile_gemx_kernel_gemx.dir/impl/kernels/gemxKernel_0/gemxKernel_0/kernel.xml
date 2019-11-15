@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versionMajor="1" versionMinor="5">
+  <kernel name="gemxKernel_0" language="c" vlnv="xilinx.com:hls:gemxKernel_0:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="1" workGroupSize="1" debug="true" compileOptions=" -g -D GMEM_M=0 -D TEST_SDX=1 -D GEMX_dataType=short -D GEMX_XdataType=int32_t -D GEMX_dataEqIntType=short -D GEMX_ddrWidth=32 -D GEMX_XddrWidth=16 -D GEMX_argInstrWidth=1 -D GEMX_numInstr=16 -D GEMX_gemvkVectorBlocks=512 -D GEMX_gemvmVectorBlocks=512 -D GEMX_gemvmGroups=1 -D GEMX_gemmMBlocks=1 -D GEMX_gemmKBlocks=2 -D GEMX_gemmNBlocks=1 -D GEMX_keepMacBits=0 -D GEMX_macBits=48 -D GEMX_transpBlocks=1 -D GEMX_spmvWidth=8 -D GEMX_spmvkVectorBlocks=2048 -D GEMX_spmvMacGroups=12 -D GEMX_spmvColAddIdxBits=2 -D GEMX_spmvPadA=1 -D GEMX_spmvNumCblocks=1024 -D GEMX_spmvFloatPerDesc=4 -D GEMX_idxType=int32_t -D GEMX_nnzBlocks=8 -D GEMX_spmvKmaxBlocks=32768 -D GEMX_spmvMmaxBlocks=5462 -D GEMX_spmvUramGroups=6 -D GEMX_argPipeline=2 -D GEMX_part=vu9pf1 -D GEMX_useURAM=0 -D GEMX_splitMesh=0 -D GEMX_runGemv=0 -D GEMX_runGemm=1 -D GEMX_runTransp=0 -D GEMX_runSpmv=0 -D GEMX_numKernels=1 -D GEMX_kernelId=0 -I /home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/src -I /home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/src/python -std=c++0x" profileType="" interrupt="true">
+    <ports>
+      <port name="M_AXI_GMEMM" mode="master" range="0xFFFFFFFF" dataWidth="512" portType="addressable" base="0x0"/>
+      <port name="S_AXI_CONTROL" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
+    </ports>
+    <args>
+      <arg name="p_DdrRd" addressQualifier="1" id="0" port="M_AXI_GMEMM" size="0x8" offset="0x10" hostOffset="0x0" hostSize="0x8" type="DdrType*"/>
+      <arg name="p_DdrWr" addressQualifier="1" id="1" port="M_AXI_GMEMM" size="0x8" offset="0x1C" hostOffset="0x0" hostSize="0x8" type="DdrType*"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

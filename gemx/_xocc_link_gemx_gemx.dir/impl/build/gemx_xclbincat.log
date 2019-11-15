@@ -1,0 +1,4 @@
+INFO: Adding section [BITSTREAM (0)] using: 'gemx' (1691203 Bytes)
+INFO: Adding section [EMBEDDED_METADATA (2)] using: 'gemx' (2185 Bytes)
+INFO: Adding section [DEBUG_DATA (4)] using: 'null' (0 Bytes)
+Successfully completed 'xclbincat'

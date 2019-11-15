@@ -1,0 +1,25 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution_OCL_REGION_0"/>
+    </name>
+    <project>
+        <value string="gemxKernel_0"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xcvu9p:-flgb2104:-2-i"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+        <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" uncertainty="1.080000" period="250MHz"/>
+    </clockList>
+    <config>
+        <config_rtl register_reset="1" prefix="gemxKernel_0_"/>
+        <config_interface m_axi_addr64="1"/>
+        <config_schedule relax_ii_for_timing="1"/>
+        <config_compile pipeline_loops="64" name_max_length="256"/>
+    </config>
+</AutoPilot:solution>
+

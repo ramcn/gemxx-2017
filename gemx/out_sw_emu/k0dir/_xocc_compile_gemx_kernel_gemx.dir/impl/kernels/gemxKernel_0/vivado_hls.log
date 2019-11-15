@@ -1,0 +1,26 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.4.op (64-bit)
+  **** SW Build 2193837 on Tue Apr 10 18:06:59 MDT 2018
+  **** IP Build 2189296 on Tue Apr 10 19:39:46 MDT 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vivado/2017.4.op/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2017.4.op/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-39-28.ec2.internal' (Linux_x86_64 version 3.10.0-693.21.1.el7.x86_64) on Fri Nov 15 03:53:24 UTC 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/out_sw_emu/k0dir/_xocc_compile_gemx_kernel_gemx.dir/impl/kernels/gemxKernel_0'
+INFO: [HLS 200-10] Creating and opening project '/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/out_sw_emu/k0dir/_xocc_compile_gemx_kernel_gemx.dir/impl/kernels/gemxKernel_0/gemxKernel_0'.
+INFO: [HLS 200-10] Adding design file '/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/src/gemx_kernel.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/out_sw_emu/k0dir/_xocc_compile_gemx_kernel_gemx.dir/impl/kernels/gemxKernel_0/gemxKernel_0/solution_OCL_REGION_0'.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.08ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [XFORM 203-1171] Pipeline the innermost loop with trip count more than 64 or its parent loop when its trip count is less than or equal 64.
+INFO: [XFORM 203-1161] The maximum of name length is set into 256.
+INFO: [HLS 200-10] Analyzing design file '/home/centos/src/project_data/aws-fpga/git/gemxx-2017/gemx/src/gemx_kernel.cpp' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:09 ; elapsed = 00:00:45 . Memory (MB): peak = 454.207 ; gain = 17.500 ; free physical = 117182 ; free virtual = 157359
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:11 ; elapsed = 00:00:47 . Memory (MB): peak = 454.207 ; gain = 17.500 ; free physical = 117174 ; free virtual = 157359
+Vivado HLS completed successfully
+INFO: [Common 17-206] Exiting vivado_hls at Fri Nov 15 03:54:11 2019...

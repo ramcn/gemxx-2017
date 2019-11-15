@@ -1,0 +1,22 @@
+GEMX:  out_host/gemx_gen_bin.exe -read out_sw_emu/app_out0.bin
+INFO: loading out_sw_emu/app_out0.bin of size 8192
+INFO: loaded 8192 bytes from out_sw_emu/app_out0.bin
+
+INFO:   format   op       start         end    duration     ms@250MHz
+  DATA: cycles    0           1           2           1      0.000004
+  DATA: cycles    1           2           3           1      0.000004
+  DATA: cycles    2           3           4           1      0.000004
+  DATA: cycles    3           4           5           1      0.000004
+  DATA: cycles    4           5           6           1      0.000004
+  DATA: cycles    5           6           7           1      0.000004
+  DATA: cycles    6           7           8           1      0.000004
+  DATA: cycles    7           8           9           1      0.000004
+  DATA: cycles    8           9          10           1      0.000004
+  DATA: cycles    9          10          11           1      0.000004
+  DATA: cycles   10          11          12           1      0.000004
+  DATA: cycles   11          12          13           1      0.000004
+  DATA: cycles   12          13          14           1      0.000004
+  DATA: cycles   13          14          15           1      0.000004
+  DATA: cycles   14          15          16           1      0.000004
+  DATA: cycles   15          16          17           1      0.000004
+
