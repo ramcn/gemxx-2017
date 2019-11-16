@@ -366,6 +366,7 @@ OUT_HOST_DIR = out_host
 HOST_EXE = ${OUT_HOST_DIR}/gemx_host.exe
 GEN_BIN_EXE = ${OUT_HOST_DIR}/gemx_gen_bin.exe
 API_GEMM_EXE = ${OUT_HOST_DIR}/gemx_api_gemm.exe
+XBLAS_EXE = ${OUT_HOST_DIR}/gemx_xblas.exe
 API_SPMV_EXE = ${OUT_HOST_DIR}/gemx_api_spmv.exe
 API_GEMM_MULTI_INSTR_EXE = ${OUT_HOST_DIR}/gemx_api_gemm_multiInstr.exe
 
@@ -431,6 +432,9 @@ run_cpu_em: host
 run_hw_em: host
 	+make SDA_FLOW=hw_emu run_em_int  2>&1 | tee log-run_hw_em.txt
 
+run_xblas_cpu_em: xblas 
+	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_xblas_cpu_em.txt
+
 run_apiGemm_cpu_em: api_gemm 
 	+make SDA_FLOW=sw_emu run_apiGemm_em_int  2>&1 | tee log-run_apiGemm_cpu_em.txt
 
@@ -475,6 +479,7 @@ host : ${HOST_EXE} ${GEN_BIN_EXE} ${APP_GOLD_TXT}
 
 api_gemm : ${API_GEMM_EXE}
 api_spmv : ${API_SPMV_EXE}
+xblas : ${XBLAS_EXE}
 
 ${GEMX_HOST_OBJS} : ./src/* | ${OUT_HOST_DIR}
 	@echo "**** Compile host binding for Python ****"
@@ -499,6 +504,11 @@ ${API_GEMM_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile testcase generator executable *****"
 	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
 	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_api_gemm.cpp -o $@
+
+${XBLAS_EXE} : ./src/* | ${OUT_HOST_DIR}
+	@echo "***** Compile xblas executable *****"
+	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
+	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_xblas.cpp src/gemx_xblas_main.cpp -o $@
 
 ${API_SPMV_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile testcase generator executable *****"
