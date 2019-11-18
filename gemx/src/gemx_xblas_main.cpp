@@ -1,31 +1,36 @@
 #include <stdio.h>
-#include <string>
+#include <string.h>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <vector>
 #include <iomanip>
 #include <chrono>
-#include <stdio.h>  // fgets for popen
+
 
 #include "gemx_xblas.h"
 
 int main(int argc, char **argv) {   
-      int size=64;
-      std::vector<GEMX_dataType> a2(size*size);
-      std::vector<GEMX_dataType> b2(size*size);
-      std::vector<GEMX_dataType> c2(size*size);
+      int N=64;
+      std::vector<GEMX_dataType> a2(N*N);
+      std::vector<GEMX_dataType> b2(N*N);
+      std::vector<GEMX_dataType> c2(N*N);
+      float *A=(float *)malloc(N*N*(sizeof(float)));  
+      float *B=(float *)malloc(N*N*(sizeof(float)));  
 
-      for (int row = 0; row < size;  ++row) {
-	    for (int col = 0; col < size;  ++col) {
+      for (int row = 0; row < N;  ++row) {
+	    for (int col = 0; col < N;  ++col) {
 	      GEMX_dataType l_val2 = 2.0;
 	      GEMX_dataType l_val3 = 2.0;
-	      a2[row*size+col] = l_val2;
-	      b2[row*size+col] = l_val3;
-	      c2[row*size+col] = 0.0;
+	      A[row*N+col] = l_val2;
+	      B[row*N+col] = l_val3;
+	      c2[row*N+col] = 0.0;
 	    }
 	  }
-      xblas_sgemm(CblasRowMajor,CblasNoTrans,CblasNoTrans,size,size,size,1,a2,size,b2,size,1,c2,size);
+      memcpy(&a2[0], A, N*N*sizeof(float));
+      memcpy(&b2[0], B, N*N*sizeof(float));
+
+      xblas_sgemm(CblasRowMajor,CblasNoTrans,CblasNoTrans,N,N,N,1,a2,N,b2,N,1,c2,N);
   
 
         fprintf(stderr,"Result after sgemm\n");
