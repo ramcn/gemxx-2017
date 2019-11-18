@@ -242,6 +242,8 @@ endif
 
 CLCC_LINK_OPT += --kernel_frequency ${GEMX_kernelVivadoFreq}
 CLCC_OPT += --xp prop:solution.hls_pre_tcl=hls_config.tcl
+FLAPPIE_CFLAGS = -I/usr/include/hdf5/serial/ -I/usr/include/x86_64-linux-gnu/   -Wno-sign-compare -march=native  -Wno-format  -g  -fpermissive   -DUSE_SSE2  -D__USE_MISC -D_POSIX_SOURCE -DNDEBUG
+FLAPPIE_LFLAGS = -L/usr/lib/x86_64-linux-gnu/hdf5/serial/  -lblas -lhdf5 -lm
 HOST_CFLAGS = -g -O0 -std=c++11 \
               -I $(BOOST_SRC) \
               -DCL_USE_DEPRECATED_OPENCL_1_1_APIS \
@@ -368,6 +370,7 @@ GEN_BIN_EXE = ${OUT_HOST_DIR}/gemx_gen_bin.exe
 API_GEMM_EXE = ${OUT_HOST_DIR}/gemx_api_gemm.exe
 XBLAS_EXE = ${OUT_HOST_DIR}/gemx_xblas.exe
 FLAPPIE_TEST_EXE = ${OUT_HOST_DIR}/flappie_test.exe
+FLAPPIE_EXE = ${OUT_HOST_DIR}/flappie.exe
 API_SPMV_EXE = ${OUT_HOST_DIR}/gemx_api_spmv.exe
 API_GEMM_MULTI_INSTR_EXE = ${OUT_HOST_DIR}/gemx_api_gemm_multiInstr.exe
 
@@ -436,6 +439,9 @@ run_hw_em: host
 run_flappie_test_cpu_em: flappie_test 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_flappie_test_cpu_em.txt
 
+run_flappie_cpu_em: flappie 
+	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_flappie_test_cpu_em.txt
+
 run_xblas_cpu_em: xblas 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_xblas_cpu_em.txt
 
@@ -485,6 +491,7 @@ api_gemm : ${API_GEMM_EXE}
 api_spmv : ${API_SPMV_EXE}
 xblas : ${XBLAS_EXE}
 flappie_test : $(FLAPPIE_TEST_EXE)
+flappie : $(FLAPPIE_EXE)
 
 ${GEMX_HOST_OBJS} : ./src/* | ${OUT_HOST_DIR}
 	@echo "**** Compile host binding for Python ****"
@@ -509,6 +516,11 @@ ${API_GEMM_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile testcase generator executable *****"
 	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
 	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_api_gemm.cpp -o $@
+
+${FLAPPIE_EXE} : ./src/* | ${OUT_HOST_DIR}
+	@echo "***** Compile flappie  executable *****"
+	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
+	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}  ${FLAPPIE_CFLAGS} ${FLAPPIE_LFLAGS}  src/gemx_xblas.cpp src/decode.cpp src/layers.cpp src/networks.cpp src/nnfeatures.cpp src/flappie_common.cpp src/flappie_matrix.cpp src/flappie_output.cpp src/flappie_structures.cpp src/util.cpp src/fast5_interface.cpp src/flappie.cpp  -o $@
 
 ${FLAPPIE_TEST_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile flappie test executable *****"
