@@ -141,7 +141,7 @@ extern "C" {
       }
       
       if(((int)__alpha != 1) && ((int)__beta == 0)){
-	l_postScale = (__alpha << 8) | (0 & 0x000000ff);
+	//l_postScale = (__alpha << 8) | (0 & 0x000000ff);
       }else{
 	l_postScale = 256;
       }

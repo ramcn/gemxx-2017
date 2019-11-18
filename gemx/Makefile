@@ -31,9 +31,9 @@ KERNEL_NAME = gemxKernel
 
 ##############################
 # default settings 
-GEMX_dataType      = short
-GEMX_dataEqIntType = short
-GEMX_ddrWidth      =  32 
+GEMX_dataType      = float
+GEMX_dataEqIntType = int32_t 
+GEMX_ddrWidth      =  16 
 GEMX_XdataType		 = int32_t 
 GEMX_XddrWidth		 = 16 
 GEMX_argInstrWidth =   1
