@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
       memcpy(&a2[0], A, N*N*sizeof(float));
       memcpy(&b2[0], B, N*N*sizeof(float));
 
-      xblas_sgemm(CblasRowMajor,CblasNoTrans,CblasNoTrans,N,N,N,1,a2,N,b2,N,1,c2,N);
+      xblas_sgemm(CblasRowMajorXblas,CblasNoTransXblas,CblasNoTransXblas,N,N,N,1,a2,N,b2,N,1,c2,N);
   
 
         fprintf(stderr,"Result after sgemm\n");

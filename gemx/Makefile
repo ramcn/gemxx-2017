@@ -244,7 +244,7 @@ CLCC_LINK_OPT += --kernel_frequency ${GEMX_kernelVivadoFreq}
 CLCC_OPT += --xp prop:solution.hls_pre_tcl=hls_config.tcl
 FLAPPIE_CFLAGS = -I/usr/include/hdf5/serial/ -I/usr/include/x86_64-linux-gnu/   -Wno-sign-compare -march=native  -Wno-format  -g  -fpermissive   -DUSE_SSE2  -D__USE_MISC -D_POSIX_SOURCE -DNDEBUG
 FLAPPIE_LFLAGS = -L/usr/lib/x86_64-linux-gnu/hdf5/serial/  -lblas -lhdf5 -lm
-HOST_CFLAGS = -g -O0 -std=c++11 \
+HOST_CFLAGS = -g -O0  \
               -I $(BOOST_SRC) \
               -DCL_USE_DEPRECATED_OPENCL_1_1_APIS \
               -DBOOST_COMPUTE_DEBUG_KERNEL_COMPILATION \

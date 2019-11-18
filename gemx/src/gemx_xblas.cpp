@@ -15,11 +15,12 @@
 
 #include "gemx_xblas.h"
 
-#define l_calcGold 1
-#define performance_check 1
+#define l_calcGold 0
+#define performance_check 0
+#define VERBOSE -1
 
-//enum CBLAS_ORDER { CblasRowMajor, CblascolMajor };
-//enum CBLAS_TRANSPOSE { CblasNoTrans, CblasTrans };
+//enum CBLAS_ORDER_XBLAS { CblasRowMajor, CblascolMajor };
+//enum CBLAS_TRANSPOSE_XBLAS { CblasNoTrans, CblasTrans };
 
 #ifdef  __cplusplus
 extern "C" {
@@ -66,9 +67,9 @@ extern "C" {
     }
   }
 
-   void xblas_sgemm(const enum CBLAS_ORDER __Order, const enum CBLAS_TRANSPOSE __TransA, const enum CBLAS_TRANSPOSE __TransB, const int __M, const int __N, const int __K, const GEMX_dataType __alpha, std::vector<GEMX_dataType>& __A, const int __lda, std::vector<GEMX_dataType>& __B, const int __ldb, GEMX_dataType __beta, std::vector<GEMX_dataType>& __C, const int __ldc){   
+   void xblas_sgemm(const enum CBLAS_ORDER_XBLAS __Order, const enum CBLAS_TRANSPOSE_XBLAS __TransA, const enum CBLAS_TRANSPOSE_XBLAS __TransB, const int __M, const int __N, const int __K, const GEMX_dataType __alpha, std::vector<GEMX_dataType>& __A, const int __lda, std::vector<GEMX_dataType>& __B, const int __ldb, GEMX_dataType __beta, std::vector<GEMX_dataType>& __C, const int __ldc){   
     
-    if (__Order == CblascolMajor){
+    if (__Order == CblascolMajorXblas){
       std::cerr << "ERROR: Column major order is not supported." << "\n";
     }
     //############  Client code - prepare the gemm problem input  ############
@@ -179,25 +180,25 @@ extern "C" {
     if(!hasLoadXclbin){
       if (l_fpga.loadXclbin(l_xclbinFile, kernelNames)) {
 	hasLoadXclbin = true;
-	std::cout << "INFO: created kernels" << std::endl;
+	//std::cout << "INFO: created kernels" << std::endl;
       } else {
 	std::cerr << "ERROR: failed to load " + l_xclbinFile + "\n";
       }
-      showTimeData("loadXclbin", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+      //showTimeData("loadXclbin", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
     }
     //create buffers for transferring data to FPGA
     if (!l_fpga.createBuffers(l_memDesc)) {
       std::cerr << "ERROR: failed to create buffers for transffering data to FPGA DDR\n";
     }
-    showTimeData("created buffers", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+    //showTimeData("created buffers", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
 
     // Transfer data to FPGA
     if (l_fpga.copyToFpga()) {
-      std::cout << "INFO: transferred data to FPGA" << std::endl;
+      //std::cout << "INFO: transferred data to FPGA" << std::endl;
     } else {
       std::cerr << "ERROR: failed to copy data to FPGA DDR\n";
     }
-    showTimeData("copyToFpga", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+    //showTimeData("copyToFpga", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
 
     // Gemx kernel ops
     if (l_fpga.callKernels()) {
@@ -209,7 +210,7 @@ extern "C" {
 	  }
 	  std::cerr << "\n";
     }
-    showTimeData("callKernel", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+    //showTimeData("callKernel", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
 
     // Transfer data back to host - due to lazy evaluation this is generally wheer the accelerator performs the work
     if (l_fpga.copyFromFpga()) {
@@ -217,7 +218,7 @@ extern "C" {
     } else {
       std::cerr << "ERROR: failed to copy data from FPGA DDR\n";
     }
-    showTimeData("copyFromFpga", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+    //showTimeData("copyFromFpga", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
     
     //############  Write the results back to the array of Matrix C  ############
     
@@ -251,11 +252,11 @@ extern "C" {
       }
     }
     
-  showTimeData("writeToArray", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
+  //showTimeData("writeToArray", l_tp[l_tpIdx], l_tp[l_tpIdx+1]); l_tpIdx++;
   
-  showTimeData("total", l_tp[0], l_tp[l_tpIdx]); l_tpIdx++;
+  //showTimeData("total", l_tp[0], l_tp[l_tpIdx]); l_tpIdx++;
   double l_timeApiInMs = -1;
-  showTimeData("subtotalFpga", l_tp[2], l_tp[l_tpIdx], &l_timeApiInMs); l_tpIdx++; // Host->DDR, kernel, DDR->host
+  //showTimeData("subtotalFpga", l_tp[2], l_tp[l_tpIdx], &l_timeApiInMs); l_tpIdx++; // Host->DDR, kernel, DDR->host
 
     //############  Get the exact kernel time from HW cycle counters on the accelerator  ############
     unsigned long int l_Ops = 2ull * __M * __N * __K;
@@ -337,7 +338,7 @@ extern "C" {
 	}
       }
     } else {
-      std::cout << "INFO: skipped gold calculation on host\n";   
+     // std::cout << "INFO: skipped gold calculation on host\n";   
     }
 
   }
