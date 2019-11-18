@@ -260,7 +260,7 @@ HOST_LFLAGS = \
               -L$(BOOST_LIB) \
               -lboost_iostreams -lz \
               -L${GCC_PATH}/gcc-${GCC_VERSION}/lib64 \
-							-lxilinxopencl \
+							-lxilinxopencl  \
 							-lstdc++ \
 							-L${XOPENCL_LIB_PATH} \
               -lrt \
@@ -367,6 +367,7 @@ HOST_EXE = ${OUT_HOST_DIR}/gemx_host.exe
 GEN_BIN_EXE = ${OUT_HOST_DIR}/gemx_gen_bin.exe
 API_GEMM_EXE = ${OUT_HOST_DIR}/gemx_api_gemm.exe
 XBLAS_EXE = ${OUT_HOST_DIR}/gemx_xblas.exe
+FLAPPIE_TEST_EXE = ${OUT_HOST_DIR}/flappie_test.exe
 API_SPMV_EXE = ${OUT_HOST_DIR}/gemx_api_spmv.exe
 API_GEMM_MULTI_INSTR_EXE = ${OUT_HOST_DIR}/gemx_api_gemm_multiInstr.exe
 
@@ -388,7 +389,7 @@ GEMX_HOST_CFLAGS = -O3 -std=c++11 -fPIC \
 		   				-D GEMX_fpgaDdrBanks=${GEMX_fpgaDdrBanks} \
 							-Wno-ignored-attributes
 
-GEMX_HOST_LFLAGS = -L$(BOOST_LIB) -L${XILINX_SDX}/lib/lnx64.o -lz -lxilinxopencl -lstdc++ -lrt -pthread
+GEMX_HOST_LFLAGS = -L$(BOOST_LIB) -L${XILINX_SDX}/lib/lnx64.o -lz -lxilinxopencl  -lstdc++ -lrt -pthread
 
 KERNEL_XOS = ${OUT_DIR}/k0dir/gemx.xo
 ifeq ($(shell test $(GEMX_numKernels) -gt 1; echo $$?),0)
@@ -431,6 +432,9 @@ run_cpu_em: host
 
 run_hw_em: host
 	+make SDA_FLOW=hw_emu run_em_int  2>&1 | tee log-run_hw_em.txt
+
+run_flappie_test_cpu_em: flappie_test 
+	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_flappie_test_cpu_em.txt
 
 run_xblas_cpu_em: xblas 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_xblas_cpu_em.txt
@@ -480,6 +484,7 @@ host : ${HOST_EXE} ${GEN_BIN_EXE} ${APP_GOLD_TXT}
 api_gemm : ${API_GEMM_EXE}
 api_spmv : ${API_SPMV_EXE}
 xblas : ${XBLAS_EXE}
+flappie_test : $(FLAPPIE_TEST_EXE)
 
 ${GEMX_HOST_OBJS} : ./src/* | ${OUT_HOST_DIR}
 	@echo "**** Compile host binding for Python ****"
@@ -504,6 +509,11 @@ ${API_GEMM_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile testcase generator executable *****"
 	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
 	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_api_gemm.cpp -o $@
+
+${FLAPPIE_TEST_EXE} : ./src/* | ${OUT_HOST_DIR}
+	@echo "***** Compile flappie test executable *****"
+	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
+	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_xblas.cpp src/flappie_test.cpp -o $@
 
 ${XBLAS_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile xblas executable *****"
