@@ -442,6 +442,9 @@ run_flappie_test_cpu_em: flappie_test
 run_flappie_cpu_em: flappie 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_flappie_test_cpu_em.txt
 
+run_flappie_hw: flappie
+	+make SDA_FLOW=hw run_hw_int 2>&1 | tee log-run_flappie_test_hw_int.txt
+
 run_xblas_cpu_em: xblas 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_xblas_cpu_em.txt
 
