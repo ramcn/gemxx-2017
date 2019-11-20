@@ -370,6 +370,7 @@ HOST_EXE = ${OUT_HOST_DIR}/gemx_host.exe
 GEN_BIN_EXE = ${OUT_HOST_DIR}/gemx_gen_bin.exe
 API_GEMM_EXE = ${OUT_HOST_DIR}/gemx_api_gemm.exe
 XBLAS_EXE = ${OUT_HOST_DIR}/gemx_xblas.exe
+VBLAS_EXE = ${OUT_HOST_DIR}/gemv_xblas.exe
 FLAPPIE_TEST_EXE = ${OUT_HOST_DIR}/flappie_test.exe
 FLAPPIE_EXE = ${OUT_HOST_DIR}/flappie.exe
 API_SPMV_EXE = ${OUT_HOST_DIR}/gemx_api_spmv.exe
@@ -449,6 +450,9 @@ run_flappie_hw: flappie
 run_xblas_cpu_em: xblas 
 	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_xblas_cpu_em.txt
 
+run_vblas_cpu_em: vblas 
+	+make SDA_FLOW=sw_emu run_em_int 2>&1 | tee log-run_vblas_cpu_em.txt
+
 run_apiGemm_cpu_em: api_gemm 
 	+make SDA_FLOW=sw_emu run_apiGemm_em_int  2>&1 | tee log-run_apiGemm_cpu_em.txt
 
@@ -494,6 +498,7 @@ host : ${HOST_EXE} ${GEN_BIN_EXE} ${APP_GOLD_TXT}
 api_gemm : ${API_GEMM_EXE}
 api_spmv : ${API_SPMV_EXE}
 xblas : ${XBLAS_EXE}
+vblas : ${VBLAS_EXE}
 flappie_test : $(FLAPPIE_TEST_EXE)
 flappie : $(FLAPPIE_EXE)
 
@@ -535,6 +540,11 @@ ${XBLAS_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile xblas executable *****"
 	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
 	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemx_xblas.cpp src/gemx_xblas_main.cpp -o $@
+
+${VBLAS_EXE} : ./src/* | ${OUT_HOST_DIR}
+	@echo "***** Compile xblas executable *****"
+	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
+	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS} src/gemv_xblas.cpp src/gemv_xblas_main.cpp -o $@
 
 ${API_SPMV_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile testcase generator executable *****"
