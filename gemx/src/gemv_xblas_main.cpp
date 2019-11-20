@@ -8,7 +8,7 @@
 #include <chrono>
 
 
-#include "gemx_xblas.h"
+#include "gemv_xblas.h"
 #ifdef __cplusplus
 extern "C"
 {
