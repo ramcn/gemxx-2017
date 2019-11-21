@@ -17,7 +17,7 @@
 
 #define l_calcGold 0
 #define performance_check 0
-//#define VERBOSE -1
+#define VERBOSE -1
 
 //enum CBLAS_ORDER_XBLAS { CblasRowMajor, CblascolMajor };
 //enum CBLAS_TRANSPOSE_XBLAS { CblasNoTrans, CblasTrans };

@@ -20,22 +20,22 @@ extern "C"
 
 
 int main(int argc, char **argv) {   
-      int N=256;
-      std::vector<GEMX_dataType> a2(N*N);
+      int M=256, N=768;
+      std::vector<GEMX_dataType> a2(M*N);
       std::vector<GEMX_dataType> b2(N*1);
-      std::vector<GEMX_dataType> c2(N*1);
+      std::vector<GEMX_dataType> c2(M*1);
 
-      for (int row = 0; row < N;  ++row) {
+      for (int row = 0; row < M;  ++row) {
 	    for (int col = 0; col < N;  ++col) {
 	      GEMX_dataType l_val2 = 2.0;
 	      a2[row*N+col] = l_val2;
-	    }
 	      GEMX_dataType l_val3 = 2.0;
-	      b2[row] = l_val3;
+	      b2[col] = l_val3;
+	    }
 	      c2[row] = 0.0;
 	  }
 
-      xblas_sgemv(N,N,a2,N,b2,c2);
+      xblas_sgemv(M,N,a2,N,b2,c2);
       //cblas_sgemv(CblasRowMajor,CblasNoTrans,N,N,1.0,&a2[0],256,&b2[0],1, 1.0, &c2[0],1);
   
       fprintf(stderr,"Result after sgemm\n");

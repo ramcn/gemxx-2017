@@ -135,7 +135,8 @@ class Fpga
         	m_DataSize[kernelId] = p_MemDesc[kernelId].sizeBytes();
         	// Buffers
         	m_Buffer[kernelId] = boost::compute::buffer(m_Context, m_DataSize[kernelId],
-                      CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR | CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,
+                      CL_MEM_USE_HOST_PTR | CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,
+                      //CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR | CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX ,
                       &l_bufExt);
 		}
 		ok = true;

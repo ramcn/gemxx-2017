@@ -19,7 +19,7 @@ extern "C"
 #include "util.h"
 
 
-#include "gemx_xblas.h"
+#include "gemv_xblas.h"
 
 /**  Apply tanh to a matrix element-wise
  *  @param C Matrix
@@ -715,35 +715,19 @@ void grumod_step(const_flappie_matrix x, const_flappie_matrix istate,
     /*  Add sW * istate to first 3 * size elts of xF
      *  then apply gate function to get r and z
      */
-      int N=64;
-      std::vector<GEMX_dataType> a2(N*N);
-      std::vector<GEMX_dataType> b2(N*N);
-      std::vector<GEMX_dataType> c2(N*N);
-      //float *A=(float *)malloc(N*N*(sizeof(float)));
-      //float *B=(float *)malloc(N*N*(sizeof(float)));
-
-      //std::vector<float,aligned_allocator<float>> A(N*N);
-      //std::vector<float,aligned_allocator<float>> B(N*N);
-
-      for (int row = 0; row < N;  ++row) {
-            for (int col = 0; col < N;  ++col) {
-              GEMX_dataType l_val2 = 2.0;
-
-              GEMX_dataType l_val3 = 2.0;
-              a2[row*N+col] = l_val2;
-              b2[row*N+col] = l_val3;
-              c2[row*N+col] = 0.0;
-            }
-          }
-      //memcpy(&a2[0], &A[0], N*N*sizeof(float));
-      //memcpy(&b2[0], &B[0], N*N*sizeof(float));
-
-     xblas_sgemm(CblasRowMajorXblas,CblasNoTransXblas,CblasNoTransXblas,N,N,N,1,a2,N,b2,N,1,c2,N);
-     //clearMemory();
+      int M=256, N=768;
+      std::vector<GEMX_dataType> a2(M*N);
+      std::vector<GEMX_dataType> b2(N*1);
+      std::vector<GEMX_dataType> c2(M*1);
+      memcpy(&a2[0], sW->data.f, sW->nr * sW->nc * sizeof(float));
+      memcpy(&b2[0], istate->data.f, istate->nr * istate->nc * sizeof(float));
+      //memcpy(&c2[0], xF->data.f, xF->nr * xF->nc * sizeof(float));
 
 
-    cblas_sgemv(CblasColMajor, CblasTrans, sW->nr, sW->nc, 1.0, sW->data.f,
-               sW->stride, istate->data.f, 1, 1.0, xF->data.f, 1);
+    xblas_sgemv(M,N,a2,N,b2,c2);
+    memcpy(xF->data.f, &c2[0], xF->nr * xF->nc*sizeof(float));
+
+    //cblas_sgemv(CblasColMajor, CblasTrans, sW->nr, sW->nc, 1.0, sW->data.f, sW->stride, istate->data.f, 1, 1.0, xF->data.f, 1);
     for (size_t i = 0; i < (size+size); i++) {
         xF->data.f[i] = LOGISTICF(xF->data.f[i]);
     }

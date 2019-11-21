@@ -529,7 +529,7 @@ ${API_GEMM_EXE} : ./src/* | ${OUT_HOST_DIR}
 ${FLAPPIE_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile flappie  executable *****"
 	@echo ${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}
-	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}  ${FLAPPIE_CFLAGS} ${FLAPPIE_LFLAGS}  src/gemx_xblas.cpp src/decode.cpp src/layers.cpp src/networks.cpp src/nnfeatures.cpp src/flappie_common.cpp src/flappie_matrix.cpp src/flappie_output.cpp src/flappie_structures.cpp src/util.cpp src/fast5_interface.cpp src/flappie.cpp  -o $@
+	${CC} ${HOST_CFLAGS} ${HOST_LFLAGS}  ${FLAPPIE_CFLAGS} ${FLAPPIE_LFLAGS}  src/gemv_xblas.cpp src/decode.cpp src/layers.cpp src/networks.cpp src/nnfeatures.cpp src/flappie_common.cpp src/flappie_matrix.cpp src/flappie_output.cpp src/flappie_structures.cpp src/util.cpp src/fast5_interface.cpp src/flappie.cpp  -o $@
 
 ${FLAPPIE_TEST_EXE} : ./src/* | ${OUT_HOST_DIR}
 	@echo "***** Compile flappie test executable *****"
