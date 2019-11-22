@@ -41,7 +41,7 @@ GEMX_numInstr      =  16
 
 GEMX_gemvkVectorBlocks  = 512
 GEMX_gemvmVectorBlocks  = 512
-GEMX_gemvmGroups   			=  1
+GEMX_gemvmGroups   			=  4
  
 
 GEMX_gemmMBlocks   			= 1 
@@ -52,7 +52,7 @@ GEMX_splitMesh	   			= 0
 GEMX_keepMacBits				= 0
 GEMX_macBits						= 48
 
-GEMX_transpBlocks  			= 1
+GEMX_transpBlocks  			= 4
 
 GEMX_spmvWidth   				= 8 
 GEMX_spmvkVectorBlocks  = 2048
