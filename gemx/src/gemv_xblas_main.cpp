@@ -20,7 +20,7 @@ extern "C"
 
 
 int main(int argc, char **argv) {   
-      int M=256, N=768;
+      int M=768, N=256;
       std::vector<GEMX_dataType> a2(M*N);
       std::vector<GEMX_dataType> b2(N*1);
       std::vector<GEMX_dataType> c2(M*1);
@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
 	  }
 
       xblas_sgemv(M,N,a2,N,b2,c2);
-      //cblas_sgemv(CblasRowMajor,CblasNoTrans,N,N,1.0,&a2[0],256,&b2[0],1, 1.0, &c2[0],1);
+      //cblas_sgemv(CblasRowMajor,CblasNoTrans,M,N,1.0,&a2[0],256,&b2[0],1, 1.0, &c2[0],1);
   
       fprintf(stderr,"Result after sgemm\n");
       for (int i = 0; i < c2.size(); i++)

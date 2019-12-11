@@ -33,14 +33,14 @@ KERNEL_NAME = gemxKernel
 # default settings 
 GEMX_dataType      = float
 GEMX_dataEqIntType = int32_t 
-GEMX_ddrWidth      =  16 
+GEMX_ddrWidth      = 16 
 GEMX_XdataType		 = int32_t 
 GEMX_XddrWidth		 = 16 
 GEMX_argInstrWidth =   1
 GEMX_numInstr      =  16
 
-GEMX_gemvkVectorBlocks  = 512
-GEMX_gemvmVectorBlocks  = 512
+GEMX_gemvkVectorBlocks  = 1024 
+GEMX_gemvmVectorBlocks  = 1024
 GEMX_gemvmGroups   			=  1
  
 
@@ -79,8 +79,8 @@ GEMX_useURAM	   	= 0
 # What engines get included in each accelerator kernel (use 0 or 1)
 # The more engines you include the more catability you get but P&R
 # P&R becomes more difficult thus you get lower Fmax
-GEMX_runGemv 						= 0 
-GEMX_runGemm 						= 1
+GEMX_runGemv 						= 1 
+GEMX_runGemm 						= 0
 GEMX_runTransp 					= 0
 GEMX_runSpmv 						= 0
 
@@ -94,7 +94,7 @@ endif
 ifeq (${GEMX_dataType}, float)
   GEMX_dataEqIntType 		= int
   
-  GEMX_gemvmVectorBlocks = 43
+#  GEMX_gemvmVectorBlocks = 43
   
   GEMX_spmvPadA 				= 0
   GEMX_spmvFloatPerDesc = 2

@@ -715,19 +715,23 @@ void grumod_step(const_flappie_matrix x, const_flappie_matrix istate,
     /*  Add sW * istate to first 3 * size elts of xF
      *  then apply gate function to get r and z
      */
-      int M=256, N=768;
+      int M=768, N=256;
       std::vector<GEMX_dataType> a2(M*N);
       std::vector<GEMX_dataType> b2(N*1);
       std::vector<GEMX_dataType> c2(M*1);
       memcpy(&a2[0], sW->data.f, sW->nr * sW->nc * sizeof(float));
       memcpy(&b2[0], istate->data.f, istate->nr * istate->nc * sizeof(float));
-      //memcpy(&c2[0], xF->data.f, xF->nr * xF->nc * sizeof(float));
+      memcpy(&c2[0], xF->data.f, xF->nr * xF->nc * sizeof(float));
+      xblas_sgemv(M,N,a2,N,b2,c2);
+      memcpy(xF->data.f, &c2[0], xF->nr * xF->nc*sizeof(float));
 
+      // all below three gives comparable results
+      //cblas_sgemm(CblasColMajor, CblasTrans, CblasNoTrans, sW->nc, 1 , sW->nr, 1.0, sW->data.f, 256, istate->data.f, 256, 1.0, xF->data.f, 768);
+      //cblas_sgemv(CblasColMajor, CblasTrans, sW->nr, sW->nc, 1.0, sW->data.f, sW->stride, istate->data.f, 1, 1.0, xF->data.f, 1);
+      //cblas_sgemv(CblasRowMajor, CblasNoTrans, sW->nc, sW->nr, 1.0, sW->data.f, sW->stride, istate->data.f, 1, 1.0, xF->data.f, 1);
+      //fprintf(stderr, "%d %d %d\n", sW->nc, sW->nr, sW->stride);// shows 768 256 256
+      //cblas_sgemv(CblasRowMajor, CblasNoTrans, 768, 256, 1.0, sW->data.f, 256, istate->data.f, 1, 1.0, xF->data.f, 1);
 
-    xblas_sgemv(M,N,a2,N,b2,c2);
-    memcpy(xF->data.f, &c2[0], xF->nr * xF->nc*sizeof(float));
-
-    //cblas_sgemv(CblasColMajor, CblasTrans, sW->nr, sW->nc, 1.0, sW->data.f, sW->stride, istate->data.f, 1, 1.0, xF->data.f, 1);
     for (size_t i = 0; i < (size+size); i++) {
         xF->data.f[i] = LOGISTICF(xF->data.f[i]);
     }

@@ -221,6 +221,7 @@ void gemv_blocks(DdrWideType *l_aAddr, unsigned int l_srcWordLd, unsigned int l_
 	l_Transp.merge(aShuffleStream1, aShuffleStream2, aShuffleStream, numOfBlocks);
 	l_Transp.shuffle_output(aShuffleStream, aTranspStream, numOfBlocks);
 	multA(aTranspStream, l_rowBlocks, l_colBlocks);
+	//fprintf(stderr,"rb=%d cb=%d\n",l_rowBlocks, l_colBlocks);
 }
  
 	//gemv implementation

@@ -110,7 +110,7 @@ extern "C" {
 
       for (int row = 0; row < l_matA[i].rows();  ++row) {
 	for (int col = 0; col < l_matA[i].cols();  ++col) {
-	  GEMX_dataType l_val = __A[row * __M + col];
+	  GEMX_dataType l_val = __A[row * __K + col];
 	  l_matA[i].getVal(row, col) = l_val;
 	}
       }
@@ -202,7 +202,7 @@ extern "C" {
       for (int row = 0; row < l_matC[0].rows();  ++row) {
         for (int col = 0; col < 1;  ++col) {
           GEMX_dataType l_val = l_matC[0].getVal(row, col);
-          __C[row * 1 + col] =  l_val;
+          __C[row * 1 + col] =  __C[row * 1 + col] + l_val;
         }
       }
 
